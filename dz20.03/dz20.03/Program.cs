@@ -20,7 +20,7 @@ namespace dz20._03
 
             for (int i = 0; i < text.Length; i++)
             {
-                if (text[i] % 2 != 0)
+                if (char.IsLetter(text[i]) == true)
                 {
                     text = text.Remove(i, 1);
                     i--;
